@@ -1,0 +1,28 @@
+# Troubleshooting Guide
+
+## Common Issues and Solutions
+
+### 1. Authentication Errors (401)
+- Verify AUTH_TOKEN is valid and not expired
+- Check token permissions
+- Try creating new token
+
+### 2. Rate Limit Exceeded (403)
+- Check remaining rate limit through X-RateLimit-Remaining header
+- Wait until rate limit reset time at X-RateLimit-Reset header
+- Implement rate limit handling in code
+
+### 3. Resource Not Found (404)
+- Verify repository exists and is public
+- Verify that the URL is valid
+- Verify repository and owner name are correct
+
+### 4. Validation Failed (422)
+- Check request parameters
+- Verify query is correct
+- Verify API version request header is correct
+
+## Data Cleaning Approach
+
+- Filter relevant fields
+- Handle null values
